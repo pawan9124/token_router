@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login Code</title>
+    <style>
+        .code_color{
+            color:blue;
+            background-color:aqua;
+            width:fit-content
+        }
+    </style>
+</head>
+<body>
+<h1></i> Gmail API Filtering <i></h1>
+    <h4> Copy and paste the below code to the console</h4>
+    <div id="code" class="code_color"></div>
+</body>
+<script>
+console.log("window.location.href", window.location.href)
+var current_url = window.location.href;
+    var url = new URL(current_url);
+    var code = url.searchParams.get("code");
+
+    document.getElementById("code").innerHTML=code;
+    </script>
+</html>
